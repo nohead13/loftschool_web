@@ -13,4 +13,6 @@ Study project for https://loftschool.com/
 * GIT 
 * WORLDPRESS
 
-## final results https://www.maksimaan.com
+## final results 
+
+https://www.maksimaan.com
