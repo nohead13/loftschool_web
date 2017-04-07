@@ -6,11 +6,11 @@ Study project for https://loftschool.com/
 
 * HTML5
 * CSS
-* PSD TO CODE
+* PSD TO CODE/FILES
 * SASS
 * JS / jQuery
 * SVG
 * GIT 
 * WORLDPRESS
 
-
+## final results https://www.maksimaan.com
