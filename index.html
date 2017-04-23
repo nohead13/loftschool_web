@@ -2,79 +2,133 @@
 	 <html lang="en">
 		<head>
 			<meta charset="UTF-8"/>
+			<title>HTML homework #2</title>
+
+			<!-- element styles -->	
+			<link rel="stylesheet" href="css/layout/normalize.css">
+		    <link rel="stylesheet" href="css/layout/fonts.css">
+		    <link rel="stylesheet" href="css/layout/adjustment.css">
+		    <link rel="stylesheet" href="css/layout/font-awesome.css">
+
+		    <link rel="stylesheet" href="css/sections/header.css">
+		    <link rel="stylesheet" href="css/sections/sidebar.css">
+		    <link rel="stylesheet" href="css/sections/content.css">
+		    <link rel="stylesheet" href="css/sections/footer.css">
+
+		    <link rel="stylesheet" href="css/sections/about.css">
+
 			<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1"/>
 			<meta name="description" content="Demo Project"/>
 			<meta neme="keywords" content="web, app, html, css"/>
 			<meta name="author" content="Maksm Aan"/>
-			<meta name="viewport" content="width=device-width, initial-scele=1"/>
-			<link rel="stylesheet" type="text/css" href="css/main.css" />
-			<title>HTML homework #1</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			
 		</head>
 	
 	<body>
 		<div class="wrapper">
-			<header>
-				<div class="container">
-					<div>
-						<div>
-							<div><img src="img/content/avatar_small.jpg" width="60" height="60" alt="small avatar image"></div>
-							<div>
-								<p>Maksim Aan</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<a href="#">Сontacts</a>
-					</div>
-				</div>
-			</header>
-			<section>
-				<div class="container">
-					<aside>
-						<nav>
-							<ul class="nav-list">
-								<li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
-								<li class="nav__item"><a class="nav__link" href="career.html">Career</a></li>
-								<li class="nav__item"><a class="nav__link" href="portfolio.html">Portfolio</a></li>
-							</ul>
-						</nav>
-					</aside>
-					<main>
-						<div>
-							<div>
-								<div>
-									<img src="img/content/avatar_big.jpg" width="400" height="400" alt="big avatar image">
+			<div class="maincontent">
+				<!-- Header -->
+				<header class="header">
+					<div class="container clearfix">
+						<div class="header__left">
+							
+							<div class="user">
+								<div class="user__avatar">
+									<img class="user__avatar-pic" src="img/content/avatar_small.jpg" alt="small avatar image">
 								</div>
-							</div>
-							<div>
-								<h1 class="topic">About me</h1>
-								<div>
-									<p></p>
-									<p></p>
-									<p></p>
-								</div>
-								<div>
-									<a href="#">Download CV</a>
+								<div class="user__name">
+									<p>Maksim Aan</p>
 								</div>
 							</div>
 						</div>
-					</main>
-				</div>
-			</section>
-		</div>	
-		<footer>
-			<div class="container">
-				<div>
-					<div>
-						<p>&#9400; Web page design created by Loftschool</p>
+						<div class="header__right">
+							<div class="contacts">
+								<a href="#" class="contacts__trigger">Сontacts</a>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<section class="content">
+					<div class="container clearfix">
+						
+						<!-- Sidebar -->
+						<aside class="sidebar">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item nav__item_active">
+										<a class="nav__link" href="index.html">
+										<i class="fa fa-user nav__link-icon"></i>
+											<span class="nav__link-text">About</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="career.html">
+											<i class="fa fa-space-shuttle nav__link-icon"></i>
+											<span class="nav__link-text">Career</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="portfolio.html">
+										<i class="fa fa-archive nav__link-icon"></i>
+											<span class="nav__link-text">Portfolio</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</aside>
+						<!-- Main -->
+						<main class="stuff">
+							<div class="about clearfix">
+								<div class="about__left">
+									<div class="about__pic">
+										<img src="img/content/avatar_big.jpg" class="about__pic-item" alt="big avatar image">
+									</div>
+								</div>
+								<div class="about__right">
+									<h1 class="content-title">About me</h1>
+									<div class="about__text text-block">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum numquam accusantium sunt. Aperiam harum nisi, fuga aut deserunt minima?
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate mollitia reiciendis explicabo, sed quos consequuntur distinctio repellat enim ex.
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore possimus ducimus, dolores fugiat beatae ad.
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur, laboriosam ut aspernatur dolore neque eveniet nemo omnis.
+										</p>
+									</div>
+									<div class="about__download">
+										<a class="about__download-link" href="#">
+											<span class="about__download-link-text">Download CV</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+				</section>
+			</div>	
+		</div>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container clearfix">
+				<div class="footer__left">
+					<div class="copyright">
+						© Web page design created by Loftschool
 					</div>
 				</div>
-				<div>
-					<ui>
-						<il class="socials__item"><a class="socials__link" href="#">facebook</a></il>
-						<il class="socials__item"><a class="socials__link" href="#">vk</a></il>
-						<il class="socials__item"><a class="socials__link" href="#">twitter</a></il>
-					</ui>
+				<div class="footer__right">
+					<div class="socials">
+						<ui class="socials__list">
+							<il class="socials__item">
+								<a class="socials__link socials__link_fb" href="#"></a></il>
+							<il class="socials__item">
+								<a class="socials__link socials__link_vk" href="#"></a></il>
+							<il class="socials__item ">
+								<a class="socials__link socials__link_tw" href="#"></a></il>
+						</ui>
+					</div>
 				</div>
 			</div>			
 		</footer>			
